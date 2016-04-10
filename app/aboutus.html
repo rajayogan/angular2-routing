@@ -1,0 +1,7 @@
+<h1>Team Members</h1>
+
+<ul>
+    <li *ngFor="#item of teammembers; #i=index">
+      <a [routerLink]="['MemberDetails', {id: i}]"> {{ item }} </a>
+    </li>
+</ul>
